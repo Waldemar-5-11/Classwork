@@ -162,50 +162,71 @@
                 </div>
             </div>
         </section> -->
-        <form action="">
-            <input type="text" placeholder="Waldemar" /><br>
-            <label for="pas">
-                <p>Check yor password</p>
-                переключає на нижній input pass
+        <form>
+            <!-- <label> Type your name
+                <input type="text" />
             </label>
-            <br>
-            <input type="email"/><br>
-            <input type="submit" value="Send my info"/><br>
-            <input type="reset" value="Clear form"/><br>
-            <button>Submit button</button><br>
-            <input type="number"/><br>
-            <input type="checkbox" value="Agree" checked/><span>1</span><br>
-            <input type="checkbox" value="18"/><span>2</span><br>
-            <input type="checkbox" value="send"/><span>3</span><br>
-            <p>Оберіть стать</p>
-            <input type="radio" value="male" name="Gender"/><span>male</span><br>
-            <input type="radio" value="female" name="Gender"/><span>female</span><br>
-            <input type="radio" value="non-binary" name="Gender"/><span>non-binary</span><br>
-            <input type="color"/><br>
-            <input type="date"/><br>
-            <input type="datetime-local"/><br>
-            <input type="time"/><br>
-            <input type="tel"/><br>
-            <input type="week"/><br>
-            <input type="file"/><br>
-            <input type="range"/><br>
+        
+            <label> Select your city
+                <select name="userCity"> Select your city
+                    <option value="Kyiv">Kyiv</option>
+                    <option value="Kcharkiv">Kcharkiv</option>
+                    <option value="Odesa">Odesa</option>
+                    <option value="Lviv">Lviv</option>
+                    <option value="Donetsk">Donetsk</option>
+                </select>
+            </label><br>
 
-            <input type="password" id="pas"/><br>
+            <label> Select your city
+                <input type="text" name="city" list="city-list"/>
+                <datalist id="city-list"> Select your city
+                    <option value="Kyiv">Kyiv</option>
+                    <option value="Kcharkiv">Kcharkiv</option>
+                    <option value="Odesa">Odesa</option>
+                    <option value="Lviv">Lviv</option>
+                    <option value="Donetsk">Donetsk</option>
+                </datalist>
+            </label><br>
 
-            
-            <select name="select">
-                <option value="value1">Значення 1</option>
-                <option value="value2" selected>Значення 2</option>
-                <option value="value3">Значення 3</option>
+            <textarea rows="10"></textarea>
+
+            <progress max="150" value="100"></progress> -->
+        <label for="name"> Write your name
+            <input type="text" id="name" placeholder="your name">
+        </label><br>
+        <label for="s-name">Write your second name
+            <input type="text" id="s-name" placeholder="your second name">
+        </label><br><br>
+        <label for="mail">Write your e-mail
+            <input type="email" id="mail" placeholder="your e-mail">
+        </label><br><br>
+        <label for="b-date">Write your birthday
+            <input type="date" id="b-date" placeholder="">
+        </label><br><br>
+        <label for="gender">Choose your gender
+            <select name="" id="gender">
+                <option value="male">Man</option>
+                <option value="female">Woman</option>
+                <option value="non-var">ops</option>
             </select>
-            <br>
-
-            <label for="mail">
-                <input type="email" id="mail" placeholder="tata@gmail.com">
-            </label>
-
-
-
+        </label><br>
+        <label for="photo">Send your photo
+            <input type="file" id="photo" placeholder="">
+        </label><br>
+        <label for="city-list">Select your city
+            <input type="text" name="city" list="city-list"/>
+            <datalist id="city-list"> Select your city
+                <option value="Kyiv">Kyiv</option>
+                <option value="Kcharkiv">Kcharkiv</option>
+                <option value="Odesa">Odesa</option>
+                <option value="Lviv">Lviv</option>
+                <option value="Donetsk">Donetsk</option>
+            </datalist>
+        </label><br>
+        <label for="history">Tell something about yourself
+            <br><textarea name="" id="history" placeholder="describe yourself" cols="30" rows="10"></textarea>
+        </label><br>
+        
         </form>
     </main>
 
