@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>ClassWork 'Selectors'</title>
@@ -162,7 +163,7 @@
                 </div>
             </div>
         </section> -->
-        <form>
+        <form action="#" method="GET">
             <!-- <label> Type your name
                 <input type="text" />
             </label>
@@ -191,34 +192,34 @@
             <textarea rows="10"></textarea>
 
             <progress max="150" value="100"></progress> -->
-        <label for="name"> Write your name
-            <input type="text" id="name" placeholder="your name">
-        </label><br>
-        <label for="s-name">Write your second name
-            <input type="text" id="s-name" placeholder="your second name">
-        </label><br><br>
-        <label for="mail">Write your e-mail
-            <input type="email" id="mail" placeholder="your e-mail">
-        </label><br><br>
-        <label for="b-date">Write your birthday
-            <input type="date" id="b-date" placeholder="">
-        </label><br><br>
-        <label for="gender">Choose your gender
-            <select name="" id="gender">
+        <label for="name"> Write your name</label>
+            <input type="text" name="firstName" id="name" placeholder="your name" autofocus>
+        
+        <label for="s-name">Write your second name </label>
+            <input type="text" name="secondName" id="s-name" placeholder="your second name" required>
+       
+        <label for="mail">Write your e-mail</label>
+            <input type="email" name="email" id="mail" placeholder="your e-mail">
+        
+        <label for="b-date">Write your birthday</label>
+            <input type="date" name="birthday" id="b-date">
+        
+        <label for="gen">Choose your gender</label>
+            <select name="gender" id="gen">
                 <option value="male">Man</option>
                 <option value="female">Woman</option>
                 <option value="non-var">ops</option>
-            </select><br>
-            <label for="gen">Choose your gender <br>
-                <input type="radio" name="gender" id="gen"/>Man <br>
-                <input type="radio" name="gender"/>Woman <br>
-                <input type="radio" name="gender"/>ops <br>
-            </label>
-        </label><br>
-        <label for="photo">Send your photo
-            <input type="file" id="photo" placeholder="">
-        </label><br>
-        <label for="city-list">Select your city
+            </select>
+            <label for="gen1">Choose your gender</label>
+                <label for=""><input type="radio" name="gender" id="gen1"/><span>Man</span> </label>
+                <label for=""><input type="radio" name="gender"/>Woman</label>
+                <label for=""><input type="radio" name="gender" checked/>ops</label>
+            
+        
+        <label for="photo">Send your photo </label>
+            <input type="file" name="photocard" id="photo" placeholder="">
+        
+        <label for="city-list">Select your city</label>
             <input type="text" name="city" list="city-list"/>
             <datalist id="city-list"> Select your city
                 <option value="Kyiv">Kyiv</option>
@@ -227,10 +228,15 @@
                 <option value="Lviv">Lviv</option>
                 <option value="Donetsk">Donetsk</option>
             </datalist>
-        </label><br>
-        <label for="history">Tell something about yourself
-            <br><textarea name="" id="history" placeholder="describe yourself" cols="30" rows="10"></textarea>
-        </label><br>
+        
+        <label for="history">Tell something about yourself</label>
+            <textarea id="history" placeholder="describe yourself" cols="30" rows="7"></textarea>
+            <label class="row-center">
+            <input type="checkbox" name="agreement" checked/>
+                I agree with terms 
+        </label>
+        
+
         <button>Send</button>
         
         </form>

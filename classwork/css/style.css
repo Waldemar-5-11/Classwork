@@ -500,20 +500,85 @@ body {
     margin: 0;
 }
 
-button {
-    width: 70px;
-    height: 50px;
-    background-color: aqua;
-    color: red;
-    border-radius: 25%;
-    /* border: none; */
-    box-shadow: 0 0 3px 1px red;
-    margin: 10px;
-}
-button:active {
-    box-shadow: 0 0 3px 3px rgb(0, 255, 115);
+form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 25%;
+    margin: 1% auto;
+    background-color: rgb(238, 230, 220);
 }
 
+form input {
+    height: 2em;
+}
+form input[type="radio"] {
+    margin: 0;
+    height: 1em;
+}
+
+form label, button{
+    margin-top: 4%;
+    font-size: 0.8em;
+    font-weight: 700;  
+    color: rgb(2, 21, 94);
+}
+
+/* label {
+    display: inline-block;
+    vertical-align: middle;
+} */
+
+
+label[for="mail"]{
+    background-color: aqua;
+}
+label[for="name"],
+label[for="mail"]{
+    background-color: rgb(255, 115, 0);
+}
+
+label[for*="name"]{
+    background-color: rgb(17, 255, 0);
+}
+
+input::placeholder {
+    color: brown;
+    font-style: italic;
+    text-align: center;
+}
+
+.row-center {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(173, 107, 7);
+}
+input[type="checkbox"]:checked{
+    border: 5px solid rgb(7, 173, 117);
+    background-color: white;
+}
+
+input:required {
+    background: url(./assets/image/18_up_rating_FILL0_wght400_GRAD0_opsz48.png);
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+}
+
+input:focus {
+    background-color: yellowgreen;
+}
 
 
 
