@@ -1,593 +1,84 @@
-
-/* body {
-    margin: 0;
-    height: 2000px;
+@import url('./reset.css');
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('./fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
 }
 
-.element {
-    background-color: aqua;
-    position: relative;
-    top: 120px;
-    left: 40px;
+:root {
+    font-size: 18px;
 }
-
-.container {
-    background-color: lime;
-    height: 800px;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.wrapper {
-    background-color:lightslategrey;
-    width: 80%;
-    height: 800px;
-}
-
-.inner {
-    text-align: center;
-    width: 80px;
-    height: 80px;
-    background-color: forestgreen;
-    border: 1px solid black;
-}
-
-.one{
-    background-color: red;
-    position: absolute;
-    top: 20px;
-    left: 100%;
-
-}
-
-.two {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-
-}
-
-.three {
-    background-color: yellow;
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-}
-
-.four {
-    position: sticky;
-    top: 10px;
-}
-
-.five {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    top: 300px;
-}
-
-.inner-m {
-    background-color: azure;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 35%;
-    left: 35%;
-
-    
-
-} */
-
-/* .wrapper {
-    position: relative;
-}
-
-.mini {
-    width: 115px;
-    height: 115px;
-    text-align: center;
-    font-size: xx-large;
-    color: rgb(34, 214, 214);
-    font-family: fantasy;
-    border: 1px solid black;
-    position: fixed;
-}
-
-.red {
-    background-color: red;
-    
-
-}
-
-.black {
-    background-color: black;
-}
-
-.blue {
-    background-color: blue;
-}
-
-.yellow {
-    background-color: yellow;
-}
-
-.green { 
-    background-color: green;
-} */
-/* .sec {
-    width: 300px;
-    height: 300px;
-    background-color: brown;
-}
-
-.first {
-    width: 100px;
-    height: 100px;
-    background-color: bisque;
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    z-index: 1;
-}
-
-.second {
-    width: 150px;
-    height: 150px;
-    background-color: goldenrod;
-    position: relative;
-    z-index: 2;
-} */
-/* * {
-    box-sizing: border-box;
-}
-
 body {
-    margin: 0;
-}
-
-.nav-list {
-    font-family: sans-serif;
-    font-size: 0;
-}
-
-.nav-list li {
-    list-style-type: none;
-    font-size: 16px;
-}
-
-.list-item {
-    display: inline-block;
-    background-color: #f72500;
-    position: relative;
-}
-
-.link {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    display: inline-block;
-}
-
-.sub-nav-list {
-    display: none; 
-    position: absolute;
-    padding: 0;
-    width: 100%;
-}
-
-.sub-list-item {
-    background-color: #f72500;
-    width: 100%;
-    
-}
-
-.nav-list li:hover {
-    background-color: #941b00;
-}
-
-.list-item:hover >.sub-nav-list {
-    display: block;
-}
-
-.sub-sub-nav-list {
-    top: 0;
-    left: 100%;
-} */
-
-/* body {
-    margin: 0;
-}
-
-h1 {
-    color: blueviolet;
-}
-
-p {
-    color: blue;
-    width: 500px;
-    height: 300px;
-}
-
-p::first-letter {
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(236, 12, 199);
-}
-
-p::first-line,
-ul::first-line {
-    background-color: aquamarine;
-}
-
-p::selection {
-    background-color: yellow;
-}
-
-span::selection {
-    background-color: coral;
-} */
-
-/* ul li {
-    display: inline-block;
-    list-style: none;
-    width: 60px;
-    position: relative;
-    background-color: bisque;
-    color: fuchsia;
-    transition:all 1s ease;
-}
-
-
-li::before,li::after{
-    content: '';
-    width: 100%;
-    height: 0;
-    background-color:purple;
-    display: block;
-    position: absolute;  
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: linear;
-}
-li::after {
-    width: 0;
-    height: 5px;
-    transition-property: width;
-
-}
-li:hover::after,li:hover:before {
-    content: '';
-    width: 100%;
-    height: 5px;
-    background-color:purple;
-    display: block;
-    position: absolute;
-}
-
-li:hover::after {
-    background-color: greenyellow;
-    color: darkblue;
-    width: 100px;
-}
-
-li:hover::before {
-    width: 0;
-    height: 5px;
-} */
-
-
-
-/* section {
-    width: 200px;
-    height: 300px;
-    border-radius: 4px;
-    border-radius: 4px;
-    position: relative;
-} */
-/* 
-.size {
-    width: 200px;
-    height: 300px;
-}
-
-.first {
-    width: inherit;
-    height: inherit;
-    padding: 15px;
-    background-color: cadetblue;
-    padding: 15px;
-    color: rgb(53, 2, 101);
-    position: relative;
-}
-
-.second {
-    width: inherit;
-    height: inherit;
-    padding: 15px;
-    position: absolute;
-    background-color: aquamarine;
-    top: 0;
-    left: 100%;
-    transition:all 1s ease;
-}
-
-.first:hover .section {
-    top: 0;
-    left: 0;
-} */
-
-/* Повільно-виїджаючий список
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-}
-
-li {
-    list-style-type: none;
-}
-
-.list {
-position: relative;
-z-index: 3;
-}
-
-.item {
-    display: inline-block;
-    text-align: center;
-    padding: 10px;
-    background-color: darksalmon;
-    position: relative;
-}
-
-.sub-list {
-    z-index: -1;
-    width: 100%;
-    position: absolute;
-    top: -150%;
-    right: 0;
-    background-color: darksalmon;
-    transition-property: all;
-    transition-duration: 500ms;
-    transition-timing-function: ease;
-}
-
-.item:hover .sub-list {
-    
-    display: block;
-    top: 100%;
-    
-} */
-
-
-
-/* Flex */
-/* * {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-} */
-
-/* .container {
-    width: 1204px;
-    height: 400px;
-    border:2px solid black;
     display: flex;
-    
     flex-direction: row;
-    flex-wrap: nowrap;
-
-    /* або flex-flow: column-reverse wrap-reverse; */
-
-    /* justify-content: center;
-    align-items: flex-start; */
-
-/* } */
-
-/* .item {
-    width: 50px;
-    min-width: 150px;
-    height: 50px;
-    flex-grow: 1;
-    flex-shrink: 1;
+    /* height: 800px; */
+}
+header {
+    font-size: 20px;
     flex-basis: 100px;
-
-    Або 
-
-    flex: 1 1 100px; 
-    
-    background-color: teal;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    border: 1px solid grey;
+    flex-shrink: 0;
+    background-color: wheat;
+    padding: 5%;
 }
 
-.item:nth-child(3) {
-    flex-shrink: 3;
-}  */
-
-/* 
-.container-1 {
-    width: 400px;
-    height: 250px;
-    border:2px solid black;
-    border-radius: 10px;
-    display: flex;
-    background: rgb(8,205,245);
-    background: linear-gradient(90deg, rgba(8,205,245,1) 47%, rgba(19,153,184,1) 64%);    
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
+main {
+background: url('/classwork/assets/image/irbg.020.winter-snow.jpg');
+background-attachment: fixed;
+backdrop-filter: blur (8px);
+background-blend-mode: color-dodge;
 }
 
-.item-1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    flex-basis: 65px;
-    position: relative;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    padding-left: 30px;
+
+nav ul li {
+    list-style-type: none;
 }
-
-.h-st {
-    text-align: start; 
-    margin-top: 15px;
-}
-
-.number {
-    font-size: xx-large;
-    font-weight: bold;
-    text-align: start;
-    margin-top: -50px;
-}
-
-.item-1:nth-child(4) {
-    margin-bottom: auto;
-    padding-top: 30px;
-    padding-left: 50px;
-}
-
-.material-symbols-outlined {
-    color: white;
-}
-.circle-container {
-    position: relative;
-    width: 200px;
-    height: 200px;
-}
-
-.circle-container::before, .circle-container::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: white;
-    opacity: 0.3;
-}
-
-.circle-container::before {
-    z-index: 1;
-    transform: translate(0,-80px);
-}
-
-.circle-container::after {
-    z-index: 2;
-    transform: translate(-30px,80px);
-    
-} */
-
-/* Form */
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-}
-
-form {
+nav ul {
     display: flex;
     flex-direction: column;
-    border: 1px solid grey;
-    padding: 10px;
-    border-radius: 5px;
-    max-width: 25%;
-    margin: 1% auto;
-    background-color: rgb(238, 230, 220);
+    /* justify-content: space-evenly; */
 }
-
-form input {
-    height: 2em;
+nav a {
+    text-decoration: none;
 }
-form input[type="radio"] {
-    margin: 0;
-    height: 1em;
-}
-
-form label, button{
-    margin-top: 4%;
-    font-size: 0.8em;
-    font-weight: 700;  
-    color: rgb(2, 21, 94);
-}
-
-/* label {
-    display: inline-block;
-    vertical-align: middle;
-} */
-
-
-label[for="mail"]{
-    background-color: aqua;
-}
-label[for="name"],
-label[for="mail"]{
-    background-color: rgb(255, 115, 0);
-}
-
-label[for*="name"]{
-    background-color: rgb(17, 255, 0);
-}
-
-input::placeholder {
-    color: brown;
-    font-style: italic;
-    text-align: center;
-}
-
-.row-center {
-    margin: 0;
+section.main {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+}
+section.side {
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1em;
+    font-family: 'Dancing Script' ;
 }
 
-input[type="checkbox"]{
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background-color: rgb(173, 107, 7);
-}
-input[type="checkbox"]:checked{
-    border: 5px solid rgb(7, 173, 117);
-    background-color: white;
-}
+@media screen and (max-width: 300px) {
+        body {
+            flex-direction: column;
+        }
 
-input:required {
-    background: url(./assets/image/18_up_rating_FILL0_wght400_GRAD0_opsz48.png);
-    background-size: 13px;
-    background-repeat: no-repeat;
-    background-position-x: left;
-    background-position-y: center;
+        header {
+            flex-basis: 80px;
+        }
+
+        nav ul {
+            flex-direction: row;
+        }
 }
 
-input:focus {
-    background-color: yellowgreen;
+@media screen and (min-width: 300px) and (max-width: 800px) {
+        body {
+            background-color: aquamarine;
+            flex-direction: column;
+        }
+
+
+        header {
+            flex-basis: 80px;
+        }
+        nav ul {
+            flex-direction: row;
+        }
 }
-
-
-
-
-
-
-
-
-
-
-
-
